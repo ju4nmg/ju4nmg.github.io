@@ -6,8 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Juan Manuel Gimenez</title>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Fonts and Stylesheets -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -15,49 +19,33 @@
 </head>
 
 <body>
+    <!-- Mobile Menu Toggle -->
     <div id="mobile-menu-open" class="shadow-large">
         <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
-    <!-- End #mobile-menu-toggle -->
+
+    <!-- Header -->
     <header>
         <div id="mobile-menu-close">
-            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+            <span>Close</span>
+            <i class="fa fa-times" aria-hidden="true"></i>
         </div>
         <ul id="menu" class="shadow">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <!-- <li>
-                <a href="#educaion">Education</a>
-            </li> -->
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <!-- <li>
-                <a href="#skills">Skills</a>
-            </li> -->
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </header>
-    <!-- End header -->
 
+    <!-- Lead Section -->
     <div id="lead">
         <div id="lead-content">
-            <h2>Site Reliability Engineer</h2>
-            <h3>Juan Manuel Gimenez</h3>
-            <h3>Buenos Aires, Argentina</h3>
-            <h2><a href="https://www.linkedin.com/in/juanmanuelgimenez/" style="color: white;">My linkedin</a></h2>
-
-            <br>
-
-            <!-- <a href="#" class="btn-rounded-white">Download Resume</a> -->
+            <h1>Juan Manuel Gimenez</h1>
+            <h2>Cloud Support from Buenos Aires, Argentina</h2>
+            <a href="https://www.linkedin.com/in/juanmanuelgimenez/" class="btn-rounded-white" style="color: white;">LinkedIn</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#" class="btn-rounded-white">Resume</a>
         </div>
-        <!-- End #lead-content -->
 
         <div id="lead-overlay"></div>
 
@@ -66,10 +54,9 @@
                 <i class="fa fa-chevron-down" aria-hidden="true"></i>
             </span>
         </div>
-        <!-- End #lead-down -->
     </div>
-    <!-- End #lead -->
 
+    <!-- About Section -->
     <div id="about">
         <div class="container">
             <div class="row">
@@ -78,159 +65,129 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-                        My qualifications and areas of expertise: <br>
-                        Development and maintenance of microservices and kubernetes clusters<br>
-                        Infrastructure design, development and implementation for AWS or Azure cloud <br>
-                        Monitoring and alerting solutions <br>
+                        My qualifications and areas of expertise:
+                        <br> Development and maintenance of microservices and Kubernetes clusters
+                        <br> Infrastructure design, development, and implementation for AWS or Azure cloud
+                        <br> Monitoring and alerting solutions
+                    </p>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End #about -->
 
+    <!-- Projects Section -->
+    <div id="projects" class="background-alt">
+        <h3 class="heading">Projects</h3>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/Grafana.png" alt="Grafana Monitoring Solution">
+                    </div>
+                    <div class="project-info">
+                        <h3>Monitoring Solutions</h3>
+                        <p>
+                            First freelancer job: the client had infrastructure deployed in Docker Swarm across several environments and wanted monitoring.
+                            We implemented Grafana Cloud, installed and configured required tools, and developed the alerts, dashboards, and integrations needed.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project.jpg" alt="Project Placeholder">
+                    </div>
+                    <div class="project-info">
+                        <h3>Cloud development</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna.
+                            Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero.
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Experience Section -->
     <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
-
             <div data-date="Feb 2024 - Current">
                 <h3>Siigo</h3>
                 <h4>SRE</h4>
                 <p>
-                Lead monitoring engineer overseeing infrastructure visualization, alerting, and automation<br>
-                Development and maintenance of Azure infrastructure, focused on AKS clusters<br>
-                Planning and development of services and microservices
+                    Lead monitoring engineer overseeing infrastructure visualization, alerting, and automation
+                    <br> Development and maintenance of Azure infrastructure, focused on AKS clusters
+                    <br> Planning and development of services and microservices
                 </p>
             </div>
-
 
             <div data-date="Nov 2023 - Jan 2024">
                 <h3>Freelancer</h3>
                 <h4>Cloud Engineer</h4>
                 <p>
-                  - ClearDil - Monitoring solution over Azure VMs with Grafana<br>
+                    - ClearDil: Monitoring solution over Azure VMs with Grafana
                 </p>
             </div>
 
-            <div data-date="December 2021 - Nov 2023">
+            <div data-date="Dec 2021 - Nov 2023">
                 <h3>Genesys</h3>
                 <h4>Site Reliability Engineer</h4>
                 <p>
-                  SRE for several teams and projects in both AWS and Azure, mostly focused on CIs, monitoring and infra maintenance <br>
-                  - Prometheus/Grafana  <br>
-                  - Github Action/Jenkins <br>
-                  - Kubernetes/Terraform/Bash <br>
-                  - CloudFormation/ECS <br>
+                    SRE for several teams and projects in both AWS and Azure, mostly focused on CIs, monitoring, and infrastructure maintenance:
+                    <br> - Prometheus/Grafana
+                    <br> - GitHub Actions/Jenkins
+                    <br> - Kubernetes/Terraform/Bash
+                    <br> - CloudFormation/ECS
                 </p>
             </div>
 
-            <div data-date="May 2020 – September 2021">
+            <div data-date="May 2020 - Sep 2021">
                 <h3>Accenture</h3>
                 <h4>DevOps Engineer</h4>
                 <p>
-                  My very first job in the industry as a DevOps, i've learned the basics of everything here, from bash to working purely on the cloud <br>
-                  - Docker <br>
-                  - Kubernetes <br>
-                  - Terraform <br>
-                  - Ansible <br>
-                  - AWS/Azure <br>
-                  - Gitlab/Azure DevOps <br>
-                  - Bash/Python scripting
-
+                    My first industry job as a DevOps Engineer, learning the basics of cloud technology and automation:
+                    <br> - Docker
+                    <br> - Kubernetes
+                    <br> - Terraform
+                    <br> - Ansible
+                    <br> - AWS/Azure
+                    <br> - GitLab/Azure DevOps
+                    <br> - Bash/Python scripting
+                </p>
             </div>
-            <div data-date="May 2018 – May 2020">
+
+            <div data-date="May 2018 - May 2020">
                 <h3>Mobile Workers</h3>
                 <h4>L2 Support</h4>
                 <p>
-                  Started here, doing support to clients over VMWare Software, learned the very basics of the industry <br>
-                  - Jira ticket system <br>
-              - Troubleshooting & follow up <br>
-              - Documentation <br>
-              - Linux/Windows Server <br>
-              - Networking
-
+                    Started with client support for VMware software, learning industry fundamentals:
+                    <br> - Jira ticket system
+                    <br> - Troubleshooting & follow-up
+                    <br> - Documentation
+                    <br> - Linux/Windows Server
+                    <br> - Networking
+                </p>
             </div>
         </div>
     </div>
-    <!-- End #experience -->
 
-    <!-- </div> -->
-    <!-- End #education -->
-
-    <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
-        <div class="container">
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/Grafana.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>ClearDil monitoring solution</h3>
-                        <p>
-                           First freelancer job, the client had infra deployed in docker swarm on several environments, and wanted to be able to monitor it.
-                           We decided to go forward with Grafana cloud, installed and configured the required tools for it, and developed the alerts, dashboards and integrations the client needed.
-                        </p>
-                        <!-- <a href="#">View Project</a> -->
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-         <!--   <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                     End .project-image -->
-                    <!-- <div class="project-info">
-                        <h3>Project Name Here</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                        </p>
-                        <a href="#">View Project</a>
-                    </div> -->
-                    <!-- End .project-info -->
-                <!-- </div> -->
-                <!-- End .project -->
-            </div>
-        </div>
-    </div>
-    <!-- End #projects -->
-
-    <!-- <div id="skills">
-        <h2 class="heading">Skills</h2>
-        <ul>
-            <li>Terraform</li>
-            <li>CloudFormation</li>
-            <li>Kubernetes</li>
-            <li>AWS</li>
-            <li>Azure</li> 
-            <li>Grafana</li>
-            <li>Prometheus</li>
-            <li>Elastic</li>
-            <li>Ansible</li>
-            <li>Git CIs</li>
-            <li>Linux</li>
-            <li>Python</li>
-            <li>Go</li>
-            <li>Bash</li>
-        </ul>
-    </div> -->
-    <!-- End #skills -->
-
+    <!-- Contact Section -->
     <div id="contact">
         <h2>Get in Touch</h2>
         <div id="contact-form">
             <form method="POST" action="https://formspree.io/f/xgedvjby">
-                <input type="hidden" name="_subject" value="Contact request from personal website" />
+                <input type="hidden" name="_subject" value="Contact request from personal website">
                 <input type="email" name="_replyto" placeholder="Your email" required>
                 <textarea name="message" placeholder="Your message" required></textarea>
                 <button type="submit">Send</button>
             </form>
         </div>
-        <!-- End #contact-form -->
     </div>
-    <!-- End #contact -->
 
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
@@ -246,24 +203,10 @@
                 </div>
                 <div class="col-sm-5 social">
                     <ul>
-                        <li>
-                            <a href="https://github.com/ju4nmg" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        <li><a href="https://github.com/ju4nmg" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                        <li><a href="https://stackoverflow.com/users/10491678" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/juanmanuelgimenez/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                         </li>
-                        <li>
-                            <a href="https://stackoverflow.com/users/10491678" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/juanmanuelgimenez/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                        <!-- <li>
-                            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </li> -->
-                        <!-- <li>
-                            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                        </li> -->
                     </ul>
                 </div>
             </div>
