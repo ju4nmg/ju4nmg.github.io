@@ -444,13 +444,21 @@ footer{
 .project{
     position:relative;
     max-width:900px;
-    margin:0 auto 30px auto;
+    margin:0 auto 20px auto;
     overflow:hidden;
     background:#fff;
     border-radius:4px
 }
-.project-image{
-    float:left
+.project-image {
+    float: left;
+    width: 100%; /* Ensures container takes full width available */
+    max-width: 256px; /* Limits the maximum width */
+}
+
+.project-image img {
+    display: block; /* Removes extra space below the image */
+    max-width: 100%; /* Keeps image responsive within the container */
+    height: auto; /* Maintains aspect ratio */
 }
 .project-info{
     position:absolute;
@@ -463,7 +471,7 @@ footer{
     font-size:1.5em;
     font-weight:300;
     color:#374054;
-    margin:0 0 15px 0
+    margin:0 0 35px 0
 }
 .project-info p{
     color:#74808a;
@@ -471,19 +479,6 @@ footer{
     font-size:0.9em
 }
 
-.project-info ul {
-    color: #74808a;
-    font-size: 0.9em;
-    margin: 0;
-    padding-left: 0; /* Remove indentation */
-    list-style-type: none; /* Remove bullets */
-    text-align: left; /* Ensure the list itself is left-aligned */
-}
-
-.project-info ul li {
-    margin-bottom: 5px; /* Add spacing between items */
-    text-align: left; /* Ensure individual list items are left-aligned */
-}
 
 .no-image .project-info{
     position:relative;
