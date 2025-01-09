@@ -449,7 +449,6 @@ footer{
     background:#fff;
     border-radius:4px;
     min-height: 256px; /* Ensures a minimum width */
-
     align-items: center; /* Centers content vertically */
     display: flex; /* Enables flexbox */
 }
@@ -517,68 +516,112 @@ footer{
     cursor:default;
     font-size:1.2em
 }
-#contact{
-    padding:50px 15px;
-    background:#3498db;
-    text-align:center
+#contact {
+    padding: 50px 15px;
+    background: #3498db;
+    text-align: center;
 }
-#contact h2{
-    margin:0 0 15px 0;
-    color:#fff;
-    font-weight:500
+
+#contact h2 {
+    margin: 0 0 15px 0;
+    color: #fff;
+    font-weight: 500;
 }
-#contact-form{
-    max-width:500px;
-    margin:0 auto
+
+#contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0; /* Removed padding to fix spacing */
 }
-#contact-form input,#contact-form textarea{
-    display:block;
-    width:100%;
-    padding:10px;
-    border-radius:4px;
-    border:none;
-    margin-bottom:10px;
-    background:#1d6fa5;
-    color:#fff;
-    transition:.5s ease all
+
+#contact-form {
+    flex: 1;
+    max-width: 500px;
+    margin: 0;
 }
-#contact-form input::-webkit-input-placeholder,#contact-form textarea::-webkit-input-placeholder{
-    color:#fff
+
+.calendly-inline-widget {
+    flex: 1;
+    max-width: 600px;
+    height: 500px;
+    margin: 0;
+     /* Ensure no unnecessary scrolling or spacing */
 }
-#contact-form input:-moz-placeholder,#contact-form textarea:-moz-placeholder{
-    color:#fff;
-    opacity:1
+
+#contact-form input,
+#contact-form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    margin-bottom: 10px;
+    background: #1d6fa5;
+    color: #fff;
+    transition: 0.5s ease all;
 }
-#contact-form input::-moz-placeholder,#contact-form textarea::-moz-placeholder{
-    color:#fff;
-    opacity:1
+
+#contact-form input::-webkit-input-placeholder,
+#contact-form textarea::-webkit-input-placeholder {
+    color: #fff;
 }
-#contact-form input:-ms-input-placeholder,#contact-form textarea:-ms-input-placeholder{
-    color:#fff
+
+#contact-form input:-moz-placeholder,
+#contact-form textarea:-moz-placeholder {
+    color: #fff;
+    opacity: 1;
 }
-#contact-form input:focus,#contact-form textarea:focus{
-    outline:none;
-    background:#16527a
+
+#contact-form input::-moz-placeholder,
+#contact-form textarea::-moz-placeholder {
+    color: #fff;
+    opacity: 1;
 }
-#contact-form textarea{
-    height:150px;
-    resize:none
+
+#contact-form input:-ms-input-placeholder,
+#contact-form textarea:-ms-input-placeholder {
+    color: #fff;
 }
-#contact-form button{
-    display:block;
-    width:100%;
-    background:#fff;
-    border-radius:4px;
-    padding:5px 10px;
-    border:none;
-    color:#3498db;
-    font-weight:700;
-    box-shadow:0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);
-    transition:.5s ease all
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    outline: none;
+    background: #16527a;
 }
-#contact-form button:hover{
-    box-shadow:0 10px 20px rgba(0,0,0,0.19),0 6px 6px rgba(0,0,0,0.23)
+
+#contact-form textarea {
+    height: 300px;
+    resize: none;
 }
+
+#contact-form button {
+    display: block;
+    width: 100%;
+    background: #fff;
+    border-radius: 4px;
+    padding: 5px 10px;
+    border: none;
+    color: #3498db;
+    font-weight: 700;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: 0.5s ease all;
+}
+
+#contact-form button:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+iframe {
+    flex: 1;
+    max-width: 600px;
+    height: 400px;
+    border: none;
+}
+
 .optional-section{
     padding:50px 15px;
     text-align:center;
