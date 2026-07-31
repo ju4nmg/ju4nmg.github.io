@@ -1,6 +1,11 @@
 body{
-    font-family:'Lato', sans-serif;
+    font-family:'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     font-size:16px
+}
+.lead-subtitle {
+    font-weight: 600;
+    color: #3498db;
+    margin-bottom: 15px;
 }
 body.active{
     overflow:hidden;
@@ -508,13 +513,22 @@ footer{
 }
 #skills li{
     display:inline-block;
-    margin:7px;
-    padding:5px 10px;
-    color:#374054;
-    background:#e4e4ea;
+    margin:6px;
+    padding:8px 16px;
+    color:#2c3e50;
+    background:#eef2f7;
+    border:1px solid #dcd9d9;
+    border-radius:20px;
     list-style:none;
     cursor:default;
-    font-size:1.2em
+    font-size:0.95em;
+    font-weight:500;
+    transition: all 0.2s ease;
+}
+#skills li:hover{
+    background:#3498db;
+    color:#fff;
+    border-color:#3498db;
 }
 #contact {
     padding: 50px 15px;

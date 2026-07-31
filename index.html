@@ -31,7 +31,9 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <!-- Fonts and Stylesheets -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
@@ -53,11 +55,6 @@
             <span>Close</span>
             <i class="fa fa-times" aria-hidden="true"></i>
         </div>
-<!--         <ul id="menu" class="shadow">
-            <li><a href="#projects">Services</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul> -->
     </header>
 
     <!-- Lead Section -->
@@ -67,8 +64,7 @@
             <br><br>
             <h2>Site Reliability Engineer</h2>
             <br>
-            <a href="https://www.linkedin.com/in/juanmanuelgimenez/" class="btn-rounded-white" style="color: white;">LinkedIn</a> <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
-            <!-- <a href="https://ju4nmg.github.io/JMGCloudOps.pdf" class="btn-rounded-white" download>Resume</a> -->
+            <a href="https://www.linkedin.com/in/juanmanuelgimenez/" class="btn-rounded-white" style="color: white;">LinkedIn</a>
 
         </div>
 
@@ -89,19 +85,28 @@
                     <h3 class="heading">About Me</h3>
                 </div>
                 <div class="col-md-8">
-                    <p>
-
-						<br> SRE & DevOps Engineer · Azure Infrastructure · Kubernetes · Monitoring & Automation
-                        <br>
-                        <br> I'm Juan, an SRE and DevOps Engineer from Buenos Aires/Calabria specializing in Azure infrastructure, Kubernetes, automation, and observability.
-                        <br>
-                        <br> I help teams build reliable cloud platforms, reduce technical debt, improve monitoring, and respond effectively to incidents. My expertise includes Terraform, GitHub Actions, AKS, Helm, Istio, Grafana, Prometheus, and Azure Monitor. 
-                        <br>
-                        <br> Recently, I've been focusing on AIOps and intelligent alerting to reduce noise and improve operational efficiency.
-                        </p>
+                    <p class="lead-subtitle">SRE & DevOps Engineer · Azure Infrastructure · Kubernetes · Monitoring & Automation</p>
+                    <p>I'm Juan, an SRE and DevOps Engineer specializing in Azure infrastructure, Kubernetes, automation, and observability.</p>
+                    <p>I help teams build reliable cloud platforms, reduce technical debt, improve monitoring, and respond effectively to incidents. My expertise includes Terraform, GitHub Actions, AKS, Helm, Istio, Grafana, Prometheus, and Azure Monitor.</p>
+                    <p>Recently, I've been focusing on AIOps and intelligent alerting to reduce noise and improve operational efficiency.</p>
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div id="skills">
+        <h2 class="heading">Skills & Tech Stack</h2>
+        <ul>
+            <li>Azure / AKS</li>
+            <li>Kubernetes</li>
+            <li>Terraform</li>
+            <li>GitHub Actions</li>
+            <li>Grafana / Prometheus</li>
+            <li>Istio / Helm</li>
+            <li>Python / Bash</li>
+            <li>AIOps & Observability</li>
+        </ul>
     </div>
 
     <!-- Projects Section -->
@@ -240,7 +245,7 @@
             <div class="row">
                 <div class="col-sm-5 copyright">
                     <p>
-                        Copyright &copy; <span id="current-year">2024</span> Juan Manuel Gimenez
+                        Copyright &copy; <span id="current-year"></span> Juan Manuel Gimenez
                     </p>
                 </div>
                 <div class="col-sm-2 top">
